@@ -6,7 +6,7 @@ const Admin = () => {
     <div className='wrapper fadeInDown'>
       <div id='formContent'>
         <h2 className='active'> Sign In </h2>
-        {/* <h2 Name='inactive underlineHover'>Sign Up </h2> */}
+         <h2 Name='inactive underlineHover'>Sign Up </h2> 
 
         <form action=''>
           <input

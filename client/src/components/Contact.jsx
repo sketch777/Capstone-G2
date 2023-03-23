@@ -29,7 +29,7 @@ function Contact() {
   
   return (
     <div className="contact">
-      <h2>Contact</h2>
+      <h1>Contact</h1>
       <form>
         <label>Name</label>
         <input type="text" name="name" onChange={nameInputChangeHandler} className="form-control" />
@@ -40,7 +40,7 @@ function Contact() {
         <label>Email</label>
         <input type="text" name="email" onChange={emailInputChangeHandler}  className="form-control" />
 
-        <button onClick={submitMessage}>Submit</button>
+        <button className='btn btn-white btn-lg' onClick={submitMessage}>SEND MESSAGE</button>
       </form>
     </div>
   );
