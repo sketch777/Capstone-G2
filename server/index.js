@@ -18,7 +18,7 @@ app.use(express.json());
 app.post("/api/insert", (req, res) => {
 
     const name = req.body.name
-    const email = req.body.message
+    const email = req.body.email
     const message = req.body.message
 
     const sqlInsert = "INSERT INTO contact (name, email, message) VALUES (?,?,?)";
