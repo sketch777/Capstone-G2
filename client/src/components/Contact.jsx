@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Axios from 'axios';
+import "../pages/Admin.css";
 
 function Contact() {
   const [name, setName] = useState('');
@@ -28,19 +29,19 @@ function Contact() {
   
   return (
     <div className="contact">
-      <h1>Contact</h1>
-      <div className="contact-form">
+      <h2>Contact</h2>
+      <form>
         <label>Name</label>
-        <input type="text" name="name" onChange={nameInputChangeHandler} />
+        <input type="text" name="name" onChange={nameInputChangeHandler} className="form-control" />
 
         <label>Message</label>
-        <input type="text" name="message" onChange={messageInputChangeHandler} />
+        <input type="text" name="message" onChange={messageInputChangeHandler}   className="form-control"/>
 
         <label>Email</label>
-        <input type="text" name="email" onChange={emailInputChangeHandler} />
+        <input type="text" name="email" onChange={emailInputChangeHandler}  className="form-control" />
 
         <button onClick={submitMessage}>Submit</button>
-      </div>
+      </form>
     </div>
   );
 }

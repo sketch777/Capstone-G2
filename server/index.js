@@ -30,11 +30,7 @@ app.post("/api/insert", (req, res) => {
 
 app.get('/', (req, res) => {
 
-    // const sqlInsert = "INSERT INTO Contact (Name, Message) VALUES ('Mark', 'Hello mark');"
-    // db.query(sqlInsert, (err, result)=> {
-    //  res.send('Hello Mark');   
-    // })
-    
+ 
 });
 
 app.listen(4000, () => {
